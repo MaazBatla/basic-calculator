@@ -190,7 +190,7 @@ final class KalculatorTests: XCTestCase {
     }
     
     // Test Case for the function 'inputDigit' in the ViewController Class
-    func test_VC_inputDigit(){
+    func test_ViewController_inputDigit(){
         let input = "5"
         let button = UIButton(type: .custom)
         button.setTitle(input, for: .normal)
@@ -199,7 +199,7 @@ final class KalculatorTests: XCTestCase {
     }
 
     // Test Case for the function 'clear' in the ViewController Class
-    func test_VC_clear(){
+    func test_ViewController_clear(){
         viewController.clear("")
         XCTAssertEqual(viewController.resultScreen.text, "0")
     }
